@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel</title>
+    <link rel="stylesheet" href="c.css">
+</head>
+<body>
+    <div id="menu-retractil" class="menu-retractil">
+        <a href="javascript:void(0)" class="closebtn" onclick="cerrarMenu()">×</a>
+        <!-- Aquí puedes agregar más enlaces o contenido al menú -->
+        <a href="#">Inicio</a>
+        <a href="#">Documentos</a>
+        <a href="#">Imágenes</a>
+    </div>
+    
+    <div id="contenido-principal">
+        <button class="openbtn" onclick="abrirMenu()">☰ Abrir Menú</button>  
+        <!-- El resto del contenido de tu página -->
+            <a class="f" href="fua.html">
+                <img src="l.jpeg" alt="App" class="imagen-app"/>
+            </a>
+        <a class="barra-tareas" href="" target="_self">
+            <button class="boton-inicio">Inicio</button>
+                <div class="area-iconos">
+                <!-- Aquí puedes agregar los íconos de las aplicaciones -->
+                <div class="icono"></div>
+                <div class="icono"></div>
+                <div class="icono"></div>
+            </div>
+        </a>
+    </div>
+    
+    <script>
+    function abrirMenu() {
+        document.getElementById("menu-retractil").style.width = "250px";
+        document.getElementById("contenido-principal").style.marginLeft = "250px";
+    }
+    
+    function cerrarMenu() {
+        document.getElementById("menu-retractil").style.width = "0";
+        document.getElementById("contenido-principal").style.marginLeft = "0";
+    }
+    </script>
+    
+</body>
+</html>
